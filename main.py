@@ -13,11 +13,8 @@ def index():
     # build the response string
     content = "<h1>Movie of the Day</h1>"
     content += "<ul>"
-    content += "<li>" + movie + "</li>"
-    content += "</ul>"
-
-    # TODO: pick another random movie, and display it under
-    # the heading "<h1>Tommorrow's Movie</h1>"
+    content += "<li>" + movie + "</li></ul><h1>Tomorrow's Movie</h1>"
+    content += "<ul><li>" + get_random_movie() + "</li></ul>"
 
     return content
 
